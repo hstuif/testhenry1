@@ -1,0 +1,30 @@
+{
+  "run": [
+    {
+      "filePath": "/SPGPrints02/index.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 8835374,
+        "displayName": "New Web Application 26"
+      }
+    },
+    {
+      "filePath": "/testPDF/index.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 8229633,
+        "displayName": "New Web Application 24"
+      }
+    }
+  ]
+}

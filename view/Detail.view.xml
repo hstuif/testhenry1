@@ -1,0 +1,114 @@
+<core:View controllerName="spgprints.view.Detail" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:u="sap.ui.unified" xmlns="sap.m">
+	<Page class="sapUiFioriObjectPage" title="Invoice details">
+		<IconTabBar select="onSelectChanged">
+			<items>
+				<IconTabFilter icon="sap-icon://supplier" key="1">
+					<form:SimpleForm id="SupplierForm" minWidth="1024">
+						<core:Title text="Additional Details"/>
+						<Label text="Replacement" />
+						<Text text="{WORKFLOW_ID_REPL_NAME}" />
+						<Label text="Invoice Type"/>
+						<Text text = "{INVOICE_TYPE}"/>
+						<Label text="Supplier"/>
+						<Text text="{INVOICE_LEV}"/>
+						<Label text="Invoice date"/>
+						<Text text="{INVOICE_DATE}"/>
+						<Label text="Reference"/>
+						<Text text="{INVOICE_REF}"/>
+						<Label text="VAT Amount"/>
+						<Text textalign="Right"  text="{INVOICE_VAT}"/>
+						<Label text="Total Amount"/>
+						<Text textalign="Right" text="{INVOICE_AMOUNT}"/>
+						<Label text="Net Amount"/>
+						<Text id="idNetAmount" text="{INVOICE_NET_AMOUNT}"/>
+						<Text id="idWorkflow" text="{WORKFLOW_ID}" visible="false"/>
+					</form:SimpleForm>
+					<Table id="idTable" items="{WORKFLOW_ID_ITEMS}" noDataText="">
+						<columns>
+							<Column>
+								<header>
+									<Label text="Description"/>
+								</header>
+							</Column>
+							<Column demandPopin="true" hAlign="Center" minScreenWidth="Tablet">
+								<header>
+									<Label text="GL Account"/>
+								</header>
+							</Column>
+							<Column demandPopin="true" hAlign="Center" minScreenWidth="Tablet">
+								<header>
+									<Label text="Amount"/>
+								</header>
+							</Column>
+							<Column hAlign="Right">
+								<header>
+									<Label text="Cost Center"/>
+								</header>
+							</Column>
+							<Column hAlign="Right">
+								<header>
+									<Label text="Order"/>
+								</header>
+							</Column>
+							<Column hAlign="Right">
+								<header>
+									<Label text="Salesorder"/>
+								</header>
+							</Column>
+							<Column hAlign="Right">
+								<header>
+									<Label text="SO Item"/>
+								</header>
+							</Column>
+						</columns>
+						<ColumnListItem>
+							<cells>
+								<ObjectIdentifier title="{ITEM_DESCR}"/>
+								<Input id="idGlAccount" maxlength="8" showValueHelp="true" value="{ITEM_GL}"
+									valueHelpRequest="handleGLAccountValueHelp"/>
+								<Input value="{ITEM_AMOUNT}" maxlength="10" />
+								<Input id="idCostCenter" showValueHelp="true" value="{ITEM_COSTC}" valueHelpRequest="handleCostCenterValueHelp"/>
+								<Input value="{ITEM_PURCHASEORDER}"/>
+								<Input value="{ITEM_SALESORDER}"/>
+								<Input value="{ITEM_SOITEM}"/>
+							</cells>
+						</ColumnListItem>
+					</Table>
+					<Button enabled="true" icon="sap-icon://add" iconFirst="true" id="addRow" press="onpressAddline" text="Add line" textDirection="Inherit"
+						type="Default" xmlns="sap.m"></Button>
+				</IconTabFilter>
+				<IconTabFilter icon="sap-icon://notes" id="idNotes" key="2">
+					
+					<List headerText="Notes" id="listNotes" items="{NOTES}" noDataText="">
+						<items>
+							<StandardListItem title="{LONGTEXT}"/> 
+						</items>
+					</List>
+					
+				</IconTabFilter>
+				<IconTabFilter icon="sap-icon://attachment" id="idAttach" key="3">
+					<form:SimpleForm id="AttachmentForm" minWidth="1024">
+						<core:Title text="Attachments"/>
+					</form:SimpleForm>
+					<!--<core:HTML content='&lt;div class=&quot;content&quot;&gt;&lt;h4&gt;Lorem ipsum&lt;/h4&gt;&lt;div&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/div&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://en.wikipedia.org/wiki/Lorem_ipsum&quot;&gt;Learn more about Lorem Ipsum ...&lt;/a&gt;&lt;/div&gt;'>					                    -->
+					<core:HTML content="hello" id="htmlpdf"/>
+					<!--
+												<core:HTML
+													content='&lt;div class=&quot;content&quot;&gt;&lt;iframe
+													src=&quot;http://bxmsa104.colours.inter:8000/test/zfmcall/ZMOB_INV_GET_PDF?IV_WORKITEM=000000485128&amp;format=json&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;'></core:HTML>
+													-->
+				</IconTabFilter>
+			</items>
+		</IconTabBar>
+		<footer>
+			<Bar>
+				<contentRight>
+					<Button icon="sap-icon://accept" press="handleApprove" text="Approve" type="Accept"/>
+					<Button icon="sap-icon://decline" press="handleReject" text="Reject" type="Reject"/>
+					<Button icon="sap-icon://forward" press="handleForward2" text="Forward" type="Default"/>
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</core:View>

@@ -1,0 +1,152 @@
+{
+    "ET_WORKFLOW_DATA": [
+        {
+            "WORKFLOW_ID": "000000483321",
+            "WORKFLOW_ID_DESCR": "MM invoice",
+            "WORKFLOW_ID_USER": "INV_PUR",
+            "WORKFLOW_ID_USER_FULLNAME": "Sara Purchasing",
+            "WORKFLOW_ID_OWN": "X",
+            "WORKFLOW_ID_REPLACEMENT": "",
+            "WORKFLOW_ID_NOTES": "",
+            "INVOICE_COMPCODE": "",
+            "INVOICE_NR": "",
+            "INVOICE_YEAR": "",
+            "INVOICE_DATE": "20150417",
+            "INVOICE_AMOUNT": " 500.00",
+            "INVOICE_CURR": "EUR",
+            "INVOICE_LEV": "ACKERSCHOTT",
+            "INVOICE_REF": "TEST XTENS1",
+            "NUMBER_ITEMS": "1",
+            "WORKFLOW_ID_ITEMS": [
+                {
+                    "WORKFLOW_ID": "000000483321",
+                    "ITEM_DESCR": "",
+                    "ITEM_GL": "",
+                    "ITEM_AMOUNT": "           500.00",
+                    "ITEM_COSTC": "",
+                    "ITEM_PURCHASEORDER": "4500120170",
+                    "ITEM_SALESORDER": "",
+                    "ITEM_QUANTITY": "          4.000"
+                }
+            ],
+            "NOTES": "REGEL1",
+            "UPDATE": ""
+        },
+        {
+            "WORKFLOW_ID": "000000483322",
+            "WORKFLOW_ID_DESCR": "MM invoice",
+            "WORKFLOW_ID_USER": "INV_PUR",
+            "WORKFLOW_ID_USER_FULLNAME": "Sara Purchasing",
+            "WORKFLOW_ID_OWN": "X",
+            "WORKFLOW_ID_REPLACEMENT": "",
+            "WORKFLOW_ID_NOTES": "",
+            "INVOICE_COMPCODE": "",
+            "INVOICE_NR": "",
+            "INVOICE_YEAR": "",
+            "INVOICE_DATE": "20150426",
+            "INVOICE_AMOUNT": " 250.00",
+            "INVOICE_CURR": "EUR",
+            "INVOICE_LEV": "DELOITTE",
+            "INVOICE_REF": "REF XTENSIONAL",
+            "NUMBER_ITEMS": "2",
+            "WORKFLOW_ID_ITEMS": [
+                {
+                    "WORKFLOW_ID": "000000483322",
+                    "ITEM_DESCR": "",
+                    "ITEM_GL": "",
+                    "ITEM_AMOUNT": "           100.00",
+                    "ITEM_COSTC": "",
+                    "ITEM_PURCHASEORDER": "4500120171",
+                    "ITEM_SALESORDER": "",
+                    "ITEM_QUANTITY": "          4.000"
+                },
+                {
+                    "WORKFLOW_ID": "000000483322",
+                    "ITEM_DESCR": "",
+                    "ITEM_GL": "",
+                    "ITEM_AMOUNT": "           150.00",
+                    "ITEM_COSTC": "",
+                    "ITEM_PURCHASEORDER": "4500120171",
+                    "ITEM_SALESORDER": "",
+                    "ITEM_QUANTITY": "          2.000"
+                }
+            ],
+            "NOTES": ["REGEL1 en REGEL2"],
+            "UPDATE": ""
+        },
+        {
+            "WORKFLOW_ID": "000000483323",
+            "WORKFLOW_ID_DESCR": "MM invoice 3",
+            "WORKFLOW_ID_USER": "INV_PUR",
+            "WORKFLOW_ID_USER_FULLNAME": "Sara Purchasing",
+            "WORKFLOW_ID_OWN": "X",
+            "WORKFLOW_ID_REPLACEMENT": "",
+            "WORKFLOW_ID_NOTES": "",
+            "INVOICE_COMPCODE": "",
+            "INVOICE_NR": "",
+            "INVOICE_YEAR": "",
+            "INVOICE_DATE": "20150426",
+            "INVOICE_AMOUNT": " 250.00",
+            "INVOICE_CURR": "EUR",
+            "INVOICE_LEV": "DELOITTE",
+            "INVOICE_REF": "REF XTENSIONAL",
+            "NUMBER_ITEMS": "2",
+            "WORKFLOW_ID_ITEMS": [
+                {
+                    "WORKFLOW_ID": "000000483323",
+                    "ITEM_DESCR": "",
+                    "ITEM_GL": "",
+                    "ITEM_AMOUNT": "           125.00",
+                    "ITEM_COSTC": "",
+                    "ITEM_PURCHASEORDER": "4500120171",
+                    "ITEM_SALESORDER": "",
+                    "ITEM_QUANTITY": "          4.000"
+                },
+                {
+                    "WORKFLOW_ID": "000000483323",
+                    "ITEM_DESCR": "",
+                    "ITEM_GL": "",
+                    "ITEM_AMOUNT": "           125.00",
+                    "ITEM_COSTC": "",
+                    "ITEM_PURCHASEORDER": "4500120171",
+                    "ITEM_SALESORDER": "",
+                    "ITEM_QUANTITY": "          2.000"
+                }
+            ],
+            "NOTES": [],
+            "UPDATE": ""
+        },
+        {
+            "WORKFLOW_ID": "000000483324",
+            "WORKFLOW_ID_DESCR": "MM invoice 3",
+            "WORKFLOW_ID_USER": "INV_PUR",
+            "WORKFLOW_ID_USER_FULLNAME": "Sara Purchasing",
+            "WORKFLOW_ID_OWN": "X",
+            "WORKFLOW_ID_REPLACEMENT": "",
+            "WORKFLOW_ID_NOTES": "",
+            "INVOICE_COMPCODE": "",
+            "INVOICE_NR": "",
+            "INVOICE_YEAR": "",
+            "INVOICE_DATE": "20150426",
+            "INVOICE_AMOUNT": " 125.00",
+            "INVOICE_CURR": "EUR",
+            "INVOICE_LEV": "DELOITTE",
+            "INVOICE_REF": "REF XTENSIONAL",
+            "NUMBER_ITEMS": "",
+            "WORKFLOW_ID_ITEMS": [
+                {
+                    "WORKFLOW_ID": "000000483324",
+                    "ITEM_DESCR": "",
+                    "ITEM_GL": "",
+                    "ITEM_AMOUNT": "           125.00",
+                    "ITEM_COSTC": "",
+                    "ITEM_PURCHASEORDER": "",
+                    "ITEM_SALESORDER": "",
+                    "ITEM_QUANTITY": ""
+                }],
+            "NOTES": [],
+            "UPDATE": ""
+        }
+    ],
+    "OK_CODE": "X"
+}

@@ -1,0 +1,22 @@
+<core:View xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" controllerName="spgprints.view.Settings" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Settings">
+		<content>
+		<form:SimpleForm>
+		    <core:Title text="Usersettings"/>
+		    <Label text="Servername"/>
+		    <Input id="inpServerName" placeholder="Enter servername" value="{oModel>ServerName}"/>
+		    <Label text="Username"/>
+		    <Input id="inpUserName" placeholder="Enter Username" />
+		    <Label text="Password"/>
+		    <Input id="inpPassWord" placeholder="Enter Password" type="Password"/>
+		    <CheckBox id='inpReplacement' text="Replacement" />
+		    <CheckBox id="inpOffline" text="Offline modus(test)" />
+		    <Button text="Save" icon="sap-icon://save" press="handleSaveSettings"/>
+		</form:SimpleForm>
+		</content>
+	</Page>
+</core:View>

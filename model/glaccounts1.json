@@ -1,0 +1,17 @@
+{
+    "ET_GLACCOUNT": [
+        {
+            "BUKRS": "SB01",
+            "SAKNR": "10000",
+            "TXT20": "Cash",
+            "TXT50": "Cash"
+        },
+        {
+            "BUKRS": "SB01",
+            "SAKNR": "16888",
+            "TXT20": "Received subsidies",
+            "TXT50": "Received subsidies"
+        }
+    ],
+    "OK_CODE": "X"
+}

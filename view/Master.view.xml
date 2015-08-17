@@ -1,0 +1,45 @@
+<core:View controllerName="spgprints.view.Master" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<Page title="Invoices">
+		<headerContent>
+		    <Button icon="sap-icon://refresh" press="handleRefresh"/>
+		    <Button icon="sap-icon://action-settings" press="handleSettings"/>
+		</headerContent>
+		<subHeader>
+			<Bar>
+				<contentLeft>
+					<SearchField search="handleSearch" width="100%"></SearchField>
+				</contentLeft>
+			</Bar>
+		</subHeader>
+		<!--
+      items="{ path: '/ET_WORKFLOW_DATA', 
+		                         sorter: {path: 'WORKFLOW_ID_REPL_NAME',
+		                                  descending: false,
+		                                  group: true }
+		                         }"
+      
+      -->
+		<List id="list" items="{/ET_WORKFLOW_DATA}" updateFinished="onUpdateFinished">
+			<ObjectListItem
+				number="{INVOICE_AMOUNT}"
+				numberUnit="{INVOICE_CURR}" 
+				press="handleListItemPress" 
+				title="{INVOICE_LEV}"
+				type="Active">
+				<firstStatus>
+					<ObjectStatus text="{NUMBER_ITEMS} item(s)"/>
+				</firstStatus>
+				<attributes>
+					<ObjectAttribute text="{INVOICE_DATE}"/>
+					<ObjectAttribute text="{WORKFLOW_ID_REPL_NAME}"/>
+				</attributes>
+			</ObjectListItem>
+		</List>
+		<footer>
+			<Bar></Bar>
+		</footer>
+	</Page>
+</core:View>
+
+<!--  number="{parts:[{path:'INVOICE_AMOUNT'}, {path:'INVOICE_CURR'}], formatter: 'sap.ca.ui.model.format.AmountFormat.FormatAmountStandard'}" numberUnit="{INVOICE_CURR}" press="handleListItemPress" title="{INVOICE_LEV}"  -->

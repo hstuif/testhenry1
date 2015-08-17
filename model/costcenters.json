@@ -1,0 +1,47 @@
+{
+    "ET_COSTCENTERS": [
+        {
+            "KOKRS": "SB01",
+            "KOSTL": "10000",
+            "KTEXT": "Ind. Sales Printing",
+            "LTEXT": "Ind. Sales Printing"
+        },
+        {
+            "KOKRS": "SB01",
+            "KOSTL": "20000",
+            "KTEXT": "Ind. Sales C & F",
+            "LTEXT": "Ind. Sales C & F"
+        },
+        {
+            "KOKRS": "SB01",
+            "KOSTL": "30000",
+            "KTEXT": "Ind. Sales CS",
+            "LTEXT": "Ind. Sales CS"
+        },
+        {
+            "KOKRS": "SB01",
+            "KOSTL": "40000",
+            "KTEXT": "Ind. Innovatiekosten",
+            "LTEXT": "Ind. Innovatiekosten"
+        },
+        {
+            "KOKRS": "SB01",
+            "KOSTL": "50000",
+            "KTEXT": "Ind. Logistics Costs",
+            "LTEXT": "Ind. Logistics  Costs"
+        },
+        {
+            "KOKRS": "SB01",
+            "KOSTL": "55000",
+            "KTEXT": "Ind. Production Cost",
+            "LTEXT": "Ind. Production Costs"
+        },
+        {
+            "KOKRS": "SB01",
+            "KOSTL": "60000",
+            "KTEXT": "Ind. Algemene kosten",
+            "LTEXT": "Indirecte Algemene kosten"
+        }
+    ],
+    "OK_CODE": "X"
+}

@@ -1,0 +1,15 @@
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+  <SelectDialog
+    title="Costcenters"
+    class="sapUiPopupWithPadding"
+    items="{costcenters>/ET_COSTCENTERS}"
+    search="_handleValueHelpSearch"
+    confirm="_handleValueHelpClose"
+    cancel="_handleValueHelpClose">
+    <StandardListItem
+      title="{costcenters>KOSTL}"
+      description="{costcenters>VERAK}" />
+  </SelectDialog>
+</core:FragmentDefinition>
